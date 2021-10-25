@@ -1,0 +1,51 @@
+- instalar dependencias en el entorno
+pip install pylint
+pip install psycopg2-binary
+pip install psycopg2 -- adaptador de base de datos con postgresql
+
+- instalamos django en el entorno virtual
+pip install django
+
+- seleccionamos el interprete python en vscode, ubicado en el entorno virtual del proyecto
+
+- configurar postgresql en settings.py django
+
+- PARA ESTO YA DEBEMOS TENER CREADA LA BASE DE DATOS Y EL USUARIO EN POSTGRESQL
+
+# configuración de base de datos con postgresql
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'chino',
+        'NAME': 'zanet_db',
+        'PASSWORD': 'Manny061195',
+    }
+}
+
+- CONFIGURAR gitignore en aplicación django
+https://www.toptal.com/developers/gitignore
+gitignore.io
+
+-- buscar django y visual studio code, copiar el contenido y pegarlo en el archivo .gitignore
+
+- elegimos la plantilla SBADMIN 2 y la descargamos
+
+- LENGUAJE DE PLANTILLAS DE DJANGO
+comentarios
+{# esto es un comentario #}
+
+variables
+{{ producto.titulo }}
+
+filtros
+{{ name|lower }}
+
+filtros encadenados
+{{ text|escape|linebreaks }}
+
+etiquetas(Tags)
+{% block %}
+{% endblock %}
+
+{% for %}
+{% endfor %}
