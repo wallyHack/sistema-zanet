@@ -1,0 +1,7 @@
+django
+django-admin-interface
+pillow
+django-crispy-forms
+djangorestframework
+markdown
+django-filter
